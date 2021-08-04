@@ -11,7 +11,7 @@ const path = require('path');
 
 const mailgunAuth = {
     auth: {
-        api_key: process.env.REACT_APP_MAILGUN_API_KEY,
+        api_key: '579c26fe1f79bbc36c47b1716979083f-64574a68-0f4b8acc',
         domain: 'test.jonnahmarie.page',
     },
 };
