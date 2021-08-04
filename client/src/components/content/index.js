@@ -9,7 +9,7 @@ import SpeedReport from '../speedReport';
 const Content = () => {
     return (
         <div>
-            <div>
+            <div style={{marginTop:'2%'}}>
                 <Grid container alignItems='center' spacing={0}>
                     <Grid item md={7} xs={12}>
                         <AboutSpeed />
