@@ -5,18 +5,16 @@ import './App.css';
 import './App.css';
 
 // Components
-import Layout from './components/layout';
-import SpeedComponent from './components/speedComponent';
-import AboutSpeed from './components/aboutSpeed';
-import Form from './components/requestForm';
+import Header from './components/layout/header';
+import HomePage from './components/homepage';
+import Footer from './components/layout/footer';
 
 const App = () => {
     return (
         <div>
-            <Layout />
-            <SpeedComponent />
-            <AboutSpeed />
-            <Form />
+            <Header />
+            <HomePage />
+            <Footer />
         </div>
     );
 };

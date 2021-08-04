@@ -272,13 +272,11 @@ section {
 ====================================== */
 .secondary-bar {
     border-bottom-color: #ffffff;
-    position: relative;
+    position: absolute;
     border-bottom-style: solid;
     z-index: 104;
     padding: 19px 0;
-    box-shadow: 0px 0px 24px rgb(10 10 10 / 10%);
-    -webkit-box-shadow: 0px 0px 24px rgb(10 10 10 / 10%);
-    -moz-box-shadow: 0px 0px 24px rgba(10, 10, 10, 0.1);
+    background-color: transparent;
 }
 
 .top-wrapper {
@@ -290,6 +288,7 @@ section {
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    background-color: transparent;
 }
 
 .block-left {
@@ -429,5 +428,81 @@ section {
 
     .phone-number a {
         font-size: 15px !important;
+    }
+}
+
+/* ===================================
+    3. Hero
+====================================== */
+.hero {
+    height: 1025px;
+    padding-top: 2%;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-text {
+    padding-top: 25%;
+    height: 100%;
+}
+
+.hero-text h4 {
+    color: var(--primero);
+    font-size: 24pt;
+    margin-bottom: 20px;
+}
+
+.hero-text h1 {
+    font-size: 4.4vw;
+}
+
+@media (max-width: 650px) {
+    .hero {
+        background-position: center center;
+    }
+
+    .hero-text {
+        padding-top: 60%;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .scroll-text {
+        position: absolute;
+        bottom: 20%;
+        padding-right: 5%;
+    }
+
+    .scroll-text h2 {
+        font-size: 3vw;
+    }
+}
+
+/* ===================================
+    4. Speed Stuff
+====================================== */
+
+.speed-text {
+    position: relative;
+}
+
+.speed-text h3 {
+    text-align: center;
+    font-size: 42pt;
+}
+
+.speed-text h4 {
+    font-size: 20pt;
+    text-align: center;
+    font-family: var(--fdos);
+    font-weight: 500;
+}
+@media (max-width: 650px) {
+    .speed-text {
+        position: relative;
+    }
+
+    .speed-text h3 {
+        font-size: 24pt;
     }
 }
