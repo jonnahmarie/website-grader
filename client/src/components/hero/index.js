@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import Grid from '@material-ui/core/Grid';
 
-import desktopBG from '../../images/fm-website-grader-background.png';
-import mobileBG from '../../images/fm-website-grader-background-mobile.png'
+import desktopBG from '../../images/fm-website-grader-background.jpg';
+import mobileBG from '../../images/fm-website-grader-background-mobile.jpg'
 
 const Hero = () => {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
