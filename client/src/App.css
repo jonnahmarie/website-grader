@@ -506,3 +506,70 @@ section {
         font-size: 24pt;
     }
 }
+
+/* ===================================
+    5. Contact
+====================================== */
+
+.contact {
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+    margin: 3%;
+    padding: 10%;
+}
+
+.contact h3 {
+    background: -webkit-linear-gradient(40deg, #b35aa3, #70489d);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: left;
+    font-size: 48pt;
+    margin-bottom: 10%;
+}
+
+/* ===================================
+    6. About
+====================================== */
+
+.speed-image-container {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    padding: 2%;
+}
+
+.about {
+    background-color: #e3e3e3;
+}
+
+.about h3 {
+    font-size: 44pt;
+    text-align: right;
+}
+
+.about h4 {
+    font-size: 28pt;
+    text-align: right;
+}
+
+.about p {
+    margin-bottom: 15px;
+}
+
+/* ===================================
+    7. Footer
+====================================== */
+
+.footer {
+    text-align: center;
+    background: linear-gradient(40deg, #b35aa3, #70489d);
+    width: 100%;
+}
+
+.footer p {
+    color: #ffffff !important;
+}
+
+.footer a, a:link, a:active {
+    color: #e37ed7;
+    font-weight: 700;
+}

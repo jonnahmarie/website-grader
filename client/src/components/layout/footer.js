@@ -1,20 +1,19 @@
 import React from 'react';
-import Container from '@material-ui/core/Container';
 
 const Footer = () => {
     return (
-        <Container>
+        <div className='footer'>
             <section>
                 <div>
                     <p>
-                        &copy; 2021 | 
-                        <a href='https://ferociousmedia.com' target='_blank' rel='noreferrer'>Ferocious Media</a>. 
-                        All rights reserved. | 
+                        &copy; 2021 |&nbsp;
+                        <a href='https://ferociousmedia.com' target='_blank' rel='noreferrer'>Ferocious Media</a>.&nbsp;
+                        All rights reserved. |&nbsp;
                         <a href='https://ferociousmedia.com/privacy-policy/' target='_blank' rel='noreferrer'>Privacy Policy</a>
                     </p>
                 </div>
             </section>
-        </Container>
+        </div>
     )
 }
 

@@ -4,7 +4,7 @@ import Fade from 'react-reveal/Fade';
 
 import Checkmark from '../../images/checkmark.png';
 
-class SpeedComponent extends Component {
+class SpeedChecks extends Component {
     render() {
         return(
             <div className='speed-text'>
@@ -62,4 +62,4 @@ class SpeedComponent extends Component {
     }
 }
 
-export default SpeedComponent;
+export default SpeedChecks;
