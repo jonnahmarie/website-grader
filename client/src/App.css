@@ -167,24 +167,6 @@ h6 {
     line-height: 1.3em;
 }
 
-.vertical-align {
-    display: table;
-}
-
-.vertical-align > [class^='col-'],
-.vertical-align > [class*=' col-'] {
-    display: table-cell;
-    vertical-align: middle;
-    float: none;
-}
-
-.home-body,
-.all-body {
-    padding-top: 0px;
-    position: relative;
-    transition: all 0.3s ease;
-}
-
 .box-wrapper,
 section {
     width: 90%;
@@ -192,63 +174,6 @@ section {
     margin: 0 auto;
     display: block;
     padding: 70px 0;
-}
-
-.effect-hover {
-    transition: all 0.5s ease-out;
-}
-
-.effect-hover:hover {
-    transition: all 0.3s ease;
-}
-
-.green-bg {
-    background-color: var(--plata);
-    margin: 40px 0 0 !important;
-}
-
-.resources-pages .green-bg {
-    margin: 0 !important;
-}
-
-.over-green {
-    text-align: center;
-    color: var(--primero);
-    width: 60%;
-    margin: 0 auto;
-}
-
-.white-button {
-    display: flex;
-    justify-content: center;
-}
-
-.white-button a {
-    color: var(--gris);
-    background-color: #fff;
-    text-transform: uppercase;
-    margin-top: 40px;
-    font-family: var(--fdos);
-    padding: 10px 20px;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
-    transition: all 0.5s ease-out;
-}
-
-.white-button a:hover {
-    color: #fff;
-    background-color: var(--primero);
-    padding: 10px 30px;
-    transition: all 0.2s ease-in;
-}
-
-.vv-subtitles h3 {
-    color: #fff;
-    font-size: 34px;
-    margin-top: 15px;
-}
-
-.top-internal-pages section h1 {
-    text-align: left;
 }
 
 .content-body {
@@ -289,32 +214,6 @@ section {
     align-items: center;
     height: 100%;
     background-color: transparent;
-}
-
-.block-left {
-    display: block;
-}
-
-.block-right {
-    display: flex;
-    height: 100%;
-    flex-wrap: wrap;
-}
-
-.block-left,
-.block-left a,
-.block-right a {
-    color: var(--primero);
-}
-
-.block-left a {
-    margin-left: 5px;
-    font-weight: 400;
-}
-
-.block-right a {
-    margin-left: 16px;
-    font-size: 20px;
 }
 
 @media only screen and (max-width: 949px) {

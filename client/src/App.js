@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 
 // CSS
 import './App.css';
@@ -8,6 +7,8 @@ import './App.css';
 import Header from './components/layout/header';
 import HomePage from './components/homepage';
 import Footer from './components/layout/footer';
+
+require('dotenv').config();
 
 const App = () => {
     return (
