@@ -9,6 +9,8 @@ import {
 
 import LogoSvg from '../../images/map-marker-plus-regular.svg';
 
+const API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
+
 const data = {
     center: {
         lat: 41.4397016,
@@ -27,7 +29,7 @@ const locationone = {
 const MyMapComponent = compose(
     withProps({
         googleMapURL:
-            'https://maps.googleapis.com/maps/api/js?key=AIzaSyCDoronmUKLLNU5PkhtG8Hmm95BClwSH5Y&v=3.exp&libraries=geometry,drawing,places',
+            `https://maps.googleapis.com/maps/api/js?key=${API_KEY}&v=3.exp&libraries=geometry,drawing,places`,
         loadingElement: <div style={{ height: 400 }} />,
         containerElement: (
             <div
