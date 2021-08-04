@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const { check, validationResult } = require('express-validator');
+const API_KEY = process.env.REACT_APP_MAILGUN_API_KEY;
 
 // email setup
 const nodemailer = require('nodemailer');
@@ -11,7 +12,7 @@ const path = require('path');
 
 const mailgunAuth = {
     auth: {
-        api_key: 'key-5b39db9eb9bccb75ac9dce23068a91d2',
+        api_key: API_KEY,
         domain: 'mg.virtuosoacquisition.com',
     },
 };
