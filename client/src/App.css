@@ -358,6 +358,7 @@ section {
 @media (max-width: 650px) {
     .hero {
         background-position: center center;
+        margin-bottom: 2%;
     }
 
     .hero-text {
