@@ -8,6 +8,8 @@ import AlertTitle from '@material-ui/lab/AlertTitle';
 import ReCAPTCHA from 'react-google-recaptcha';
 import axios from 'axios';
 
+const {REACT_APP_GOOGLE_RECAPTCHA_SITEKEY} = process.env;
+
 const Form = () => {
     const recaptchaRef = createRef();
     const [sent, setSent] = useState(false);
@@ -140,7 +142,7 @@ const Form = () => {
                         )}
                         <ReCAPTCHA
                             ref={recaptchaRef}
-                            sitekey='6LdLVdsbAAAAABQP-iVUZt3vo7JkRn4B2FZ1kMae'
+                            sitekey={REACT_APP_GOOGLE_RECAPTCHA_SITEKEY}
                             onChange={onChange}
                         />
                     </Grid>
