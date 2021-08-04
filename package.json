@@ -4,7 +4,7 @@
   "description": "Ferocious Media Boilerplate to start all small websites",
   "main": "server.js",
   "scripts": {
-    "start": "node server",
+    "start": "node config server",
     "server": "nodemon server",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
@@ -15,6 +15,7 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "compression": "^1.7.4",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "express-validator": "^6.10.0",
     "handlebars": "^4.7.7",

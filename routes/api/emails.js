@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const { check, validationResult } = require('express-validator');
-const API_KEY = process.env.REACT_APP_MAILGUN_API_KEY;
 
 // email setup
 const nodemailer = require('nodemailer');
@@ -12,8 +11,8 @@ const path = require('path');
 
 const mailgunAuth = {
     auth: {
-        api_key: API_KEY,
-        domain: 'mg.virtuosoacquisition.com',
+        api_key: process.env.REACT_APP_MAILGUN_API_KEY,
+        domain: 'test.jonnahmarie.page',
     },
 };
 
@@ -27,8 +26,9 @@ router.post(
     [
         [
             check('fullName', 'Name is Required').not().isEmpty(),
-            check('phone', 'Last Name is Required').not().isEmpty(),
-            check('email', 'Emails is Required').not().isEmpty(),
+            check('phoneNumber', 'Last Name is Required').not().isEmpty(),
+            check('websiteUrl', 'Website URL is Required').not().isEmpty(),
+            check('emailAddress', 'Emails is Required').not().isEmpty(),
             check('message', 'Message is Required').not().isEmpty(),
         ],
     ],
@@ -55,8 +55,8 @@ router.post(
 
             const mailOptions = {
                 from: `"${req.body.fullName}" <${req.body.email}>`,
-                to: `evangoldberg@gmail.com`,
-                subject: 'Submission from Damstrong Website',
+                to: `jonnah.marie@gmail.com`,
+                subject: 'Submission from Ferocious Media Website Speed Test Website',
                 html: htmlToSend,
             };
 
