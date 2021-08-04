@@ -15,7 +15,7 @@ class SpeedChecks extends Component {
                     </Grid>
                 </Grid>
                 <Fade left>
-                    <Grid container direction='row' justifyContent='center' alignItems='center' spacing={7}>
+                    <Grid container direction='row' alignItems='center' spacing={7}>
                         <Grid item xs={2} />
                         <Grid item xs={2}>
                             <img src={Checkmark} alt='Checkmark' style={{width:'100%'}} />
@@ -29,7 +29,7 @@ class SpeedChecks extends Component {
                     </Grid>
                 </Fade>
                 <Fade right delay={800}>
-                    <Grid container direction='row' justifyContent='center' alignItems='center' spacing={7}>
+                    <Grid container direction='row' alignItems='center' spacing={7}>
                         <Grid item xs={2} />
                         <Grid item xs={2}>
                             <img src={Checkmark} alt='Checkmark' style={{width:'100%'}} />
@@ -43,7 +43,7 @@ class SpeedChecks extends Component {
                     </Grid>
                 </Fade>
                 <Fade left delay={1600}>
-                    <Grid container direction='row' justifyContent='center' alignItems='center' spacing={7}>
+                    <Grid container direction='row' alignItems='center' spacing={7}>
                         <Grid item xs={2} />
                         <Grid item xs={2}>
                             <img src={Checkmark} alt='Checkmark' style={{width:'100%'}} />

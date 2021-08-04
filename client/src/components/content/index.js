@@ -10,7 +10,7 @@ const Content = () => {
     return (
         <div>
             <div>
-                <Grid container justifyContent='center' alignItems='center' spacing={0}>
+                <Grid container alignItems='center' spacing={0}>
                     <Grid item md={7} xs={12}>
                         <AboutSpeed />
                     </Grid>
@@ -21,7 +21,7 @@ const Content = () => {
                 </Grid>
             </div>
             <div className='speed-text'>
-                <Grid container spacing={4} direction='row' justifyContent='center' alignItems='center'>
+                <Grid container spacing={4} direction='row' alignItems='center'>
                     <Grid item md={1} />
                     <Grid item md={5} xs={12}>
                         <Form />
