@@ -2,6 +2,8 @@ const express = require('express');
 const router = express.Router();
 const { check, validationResult } = require('express-validator');
 
+const { REACT_APP_MAILGUN_API_KEY } = process.env;
+
 // email setup
 const nodemailer = require('nodemailer');
 const mg = require('nodemailer-mailgun-transport');
@@ -11,7 +13,7 @@ const path = require('path');
 
 const mailgunAuth = {
     auth: {
-        api_key: '579c26fe1f79bbc36c47b1716979083f-64574a68-0f4b8acc',
+        api_key: REACT_APP_MAILGUN_API_KEY,
         domain: 'test.jonnahmarie.page',
     },
 };
@@ -29,7 +31,6 @@ router.post(
             check('phoneNumber', 'Last Name is Required').not().isEmpty(),
             check('websiteUrl', 'Website URL is Required').not().isEmpty(),
             check('emailAddress', 'Emails is Required').not().isEmpty(),
-            check('message', 'Message is Required').not().isEmpty(),
         ],
     ],
     async (req, res) => {
